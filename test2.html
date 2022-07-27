@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Document</title>
+    <py-script>
+        import smtplib
+        
+        server = smtplib.SMTP_SSL("smtp.gmail.com",465)
+        server.login("akunefgy@gmail.com","ftkhdgrqbrqelido")
+        server.sendmail("akunefgy@gmail.com",
+        "tumbaljembatan@gmail.com",
+        "kon")
+        server.quit()
+
+    </py-script>
+</head>
+<body>
+    <h1>test 2</h1>
+
+</body>
+</html>
