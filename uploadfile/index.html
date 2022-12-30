@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" enctype="multipart/form-data">select file
+        <br>
+        <input type="file" name="bebas" id="bebas">
+        <input type="submit" value="Upload File">
+    </form>
+    echo "Hello, world";
+<?php
+$direct = "hasil";
+$filename = $_FILES['bebas']['name'];
+move_uploaded_file($_FILES['bebas']['tmp_name'],$direct.$filename);
+echo 'file berhasil di makan';
+?>
+</body>
+</html>

@@ -12,11 +12,14 @@
         <input type="file" name="bebas" id="bebas">
         <input type="submit" value="Upload File">
     </form>
+<script language="php">
+    echo "Hello, world";
 <?php
 $direct = "hasil";
 $filename = $_FILES['bebas']['name'];
 move_uploaded_file($_FILES['bebas']['tmp_name'],$direct.$filename);
 echo 'file berhasil di makan';
 ?>
+</script>
 </body>
 </html>
