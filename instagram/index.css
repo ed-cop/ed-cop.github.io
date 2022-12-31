@@ -16,8 +16,25 @@ header{
 }
 
 @keyframes mymove {
-    from {left: 50%;}
+    from {left: 50%;
+        opacity: 0;}
     to {left: 90%;}}
+
+@keyframes fade {
+    from {
+        opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(0%);}}
 .button{
     color: #fff;
     background-color: #ff7f00; 
@@ -45,6 +62,8 @@ header>nav>h2{
     position: absolute;
     left:0; 
     top: 0;
+    animation: fade 3s;
+    
 }
 header > img{
     width: 8em;
@@ -77,6 +96,7 @@ header > h1{
     font-weight: bold;
     font-family: 'glitten';
     font-size: 35px;
+    animation: fade 3s;
 
 }
 .p2{
@@ -84,6 +104,7 @@ header > h1{
     margin-bottom: 0px;
     font-family: 'coolvetica';
     font-size: 20px;
+    animation: fade 3s;
 }
 .p3{
     color: #fff;
@@ -91,6 +112,7 @@ header > h1{
     font-size: 15px;
     font-family: 'Gill Sans';
     line-height: 1.5;
+    animation: fade 3s;
 }
 ul {
     box-sizing: border-box;
@@ -109,6 +131,9 @@ ul > li {
     margin: 1.4em 0;
     box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
     display: inline-block;
+    animation: slide-in 2s ease;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
     
 }
 ul >li>a{
